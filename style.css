@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: lightgrey;
 }
 
 header {
@@ -21,7 +22,6 @@ nav ul {
 }
 
 nav ul li {
-    color: black;
     float: right;
     list-style-type: none;
     padding: 5px 10px;
@@ -29,3 +29,27 @@ nav ul li {
     right: 10%;
 }
 
+nav ul li a {
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+}
+
+#current {
+    color: black;
+}
+
+#description {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+}
+
+#description img {
+
+}
+
+.aboutme {
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
+}
