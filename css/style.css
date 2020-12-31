@@ -82,7 +82,7 @@ nav ul li a:hover {
 
 .menu {
     height: 100%;
-    width: 40%;
+    width: 25%;
     position: fixed;
     z-index: 1;
     top: 54px;
@@ -110,8 +110,8 @@ nav ul li a:hover {
 
 .feed {
     height: 100%;
-    left: 40%;
-    width: 60%;
+    left: 25%;
+    width: 75%;
     position: fixed;
     z-index: 1;
     top: 54px;
@@ -120,7 +120,5 @@ nav ul li a:hover {
 }
 
 .post {
-    left: 42%;
-    position: fixed;
-    padding: 5px;
+    padding: 10px 3%;
 }
