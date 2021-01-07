@@ -1,39 +1,74 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>About Me - Mark Lin</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link href="css/all.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
-        <header>
-            <nav>
-                <h2>Mark Lin</h2>
-                <ul>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="index.html" id="current">HOME</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="description">
-            <img src="https://raw.githubusercontent.com/MarkLinXVII/Personal-Website/master/images/avatar.jpg" alt="avatar">
+    <header>
+        <nav>
             <h2>Mark Lin</h2>
-            <h4>Honours Mathematics Co-op Student</h4>
-         </div>
-         <div class="aboutme">
-             <h3>About Me</h3>
-             <p style="color: rgb(80, 80, 80);">I am a first year student at the University of Waterloo in the Honours Mathematics Co-op Program.
-                 I have had previous experience working as a tutor at Triway Education and later, as an intern at
-                 a startup blockchain company called DxChain Network.
-             </p>
-         </div>
-         <div class="socials">
-             <h3>Socials</h3>
-             <a class="far fa-envelope fa-3x" href="mailto:mark.lin2234@gmail.com" title="Email Me"></a>
-             <a class="fab fa-github fa-3x" href="https://github.com/MarkLinXVII" title="GitHub"></a>
-             <a class="fab fa-linkedin fa-3x" href="https://www.linkedin.com/in/mark-lin-279125202/"></a>
-         </div>
+            <ul>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="index.html" id="current">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="column left">
+            <div class="center">
+                <img src="https://raw.githubusercontent.com/MarkLinXVII/Personal-Website/master/images/avatar.jpg" alt="avatar">
+                <h1>Mark Lin</h1>
+                <p>Honours Mathematics Co-op Student</p>
+            </div>
+            <div class="socials">
+                <a class="far fa-envelope fa-2x" href="mailto:mark.lin2234@gmail.com" title="Email Me"></a>
+                <a class="fab fa-github fa-2x" href="https://github.com/MarkLinXVII" target ="_blank" title="GitHub"></a>
+                <a class="fab fa-linkedin fa-2x" href="https://www.linkedin.com/in/mark-lin-279125202/" target ="_blank" title="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="column right">
+            <div>
+                <h1>Hello!</h1>
+                <p> 
+                    I am a first year student at the University of Waterloo in the Honours Mathematics Co-op Program.
+                    I previously worked as a tutor at Triway Education and later, as an intern at
+                    a startup blockchain company called DxChain Network.
+                </p>
+                <button onclick="window.open('../mark_lin_resume.pdf','_blank')" target="_blank"><strong>RESUME</strong></button>
+                <button onclick="window.location.href='projects.html'"><strong>PROJECTS</strong></button>
+            </div>
+        </div>
     </body>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
 </html>
