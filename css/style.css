@@ -5,6 +5,10 @@ body {
     padding-bottom: 5%;
 }
 
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
 /* HEADER */
 
 header {
@@ -147,49 +151,4 @@ nav ul li a:hover {
 #projects {
     clear: both;
     background: white;
-}
-
-/* Blog */
-
-.menu {
-    height: 100%;
-    width: 25%;
-    position: fixed;
-    z-index: 1;
-    top: 54px;
-    overflow-x: hidden;
-    padding-top: 20px;
-    background: rgb(196, 196, 196);
-}
-
-.menu div {
-    position: relative;
-    left: 15%;
-}
-
-.menu div input {
-    padding: 6px;
-    margin-right: 16px;
-    font-size: 17px;
-    margin-bottom: 10px;
-}
-
-.menu div ul li {
-    list-style-type: none;
-    padding: 5px 0px;
-}
-
-.feed {
-    height: 100%;
-    left: 25%;
-    width: 75%;
-    position: fixed;
-    z-index: 1;
-    top: 54px;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-.post {
-    padding: 10px 3%;
 }
