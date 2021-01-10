@@ -131,7 +131,7 @@ nav ul li a:hover {
 }
 
 .right div button {
-    padding: 10px 40px;
+    padding: 5px 30px;
     background: rgb(145, 189, 216);
     color: white;
     transition-duration: 0.5s;
@@ -151,4 +151,10 @@ nav ul li a:hover {
 #projects {
     clear: both;
     background: white;
+}
+
+.carousel {
+    width: 50%;
+    position: relative;
+    left: 25%;
 }
