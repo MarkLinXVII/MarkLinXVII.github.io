@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: linear-gradient(90deg, rgb(230, 218, 206) 0 40%, white  0 60%);
-    padding-bottom: 5%;
 }
 
 .selector-for-some-widget {
@@ -164,7 +163,6 @@ nav ul li a:hover {
 }
 
 #projects .left {
-    background: white;
     position: relative;
     width: 40%;
     left: 15%;
@@ -173,9 +171,19 @@ nav ul li a:hover {
 }
 
 #projects .right {
-    background: white;
     position: relative;
     width: 30%;
     left: 16%;
     margin: 5% 0%;
+}
+
+.right p {
+    text-align: left !important;
+}
+
+footer {
+    background: white;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
 }
