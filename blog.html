@@ -1,48 +1,57 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
     <head>
-        <title>My Blog - Mark Lin</title>
+        <title>Blog - Mark Lin</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        
+        <!-- My CSS -->
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/all.css" rel="stylesheet" type="text/css">
     </head>
     <header>
         <nav>
             <h2>Mark Lin</h2>
             <ul>
-                <li><a href="putlinkhere" id="current">BLOG</a></li>
+                <li><a href="blog.html" id="current">BLOG</a></li>
                 <li><a href="index.html">HOME</a></li>
             </ul>
         </nav>
     </header>
-    <body>
-        <div class="menu">
-            <div>
-                <h2>Search</h2>
-                <input type="text" placeholder="Search...">
-                <h2>Categories</h2>
-                <ul>
-                    <li>School</li>
-                    <li>Work</li>
-                    <li>Uncategorized</li>
-                </ul>
-            </div>
+    <body class="blog">
+        <div class="column left">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <form class="form-inline d-flex justify-content-center md-form form-sm mt-0" style="width: 20%;">
+                            <i class="fas fa-search" aria-hidden="true" style="position: relative; top: 8px; right: 10px;"></i>
+                            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+                        </form>
+                   </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
         </div>
-        <div class="row">
-            <div class="feed">
-                <div class="post">
-                    <h2>Doing 1A Online at Waterloo</h2>
-                    <p>posted by Mark Lin on 12/29/2020</p>
-                    <p>My experience at the University of Waterloo for my 1A classes was quite satisfactory. I was fortunate 
-                        enough to be among the few selected to participate in the on-campus lectures of Math 135 and 137, and
-                        it made my learning more engaging and provided motivation for me to study, which many other students
-                        found difficulty acquiring.
-                    </p>
-                </div>
-                <div class="post">
-                    <h2>Things to do during the Pandemic</h2>
-                    <p>posted by Mark Lin on 12/30/2020</p>
-                    <p>During the the pandemic, lockdowns are held and many privileges we previously had were taken away.</p>
-                </div>
-            </div>
+        <div class="column right">
+            Pog
         </div>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
+    <footer><p>Developed by Mark Lin using Bootstrap, HTML5, CSS and Javascript</p></footer>
 </html>

@@ -1,6 +1,10 @@
-body {
-    margin: 0;
+* {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.home {
+    margin: 0;
+    padding: 0;
     background: linear-gradient(90deg, rgb(230, 218, 206) 0 40%, white  0 60%);
 }
 
@@ -14,7 +18,7 @@ header {
     background: white;
     color: rgb(41, 41, 41);
     padding: 30px;
-    position: fixed;
+    position: static;
     width: 100%;
     z-index: 1;
 }
@@ -153,9 +157,19 @@ nav ul li a:hover {
     background: rgb(230, 218, 206);
 }
 
-#projects h1, #projects p {
+.title {
     text-align: center;
     margin: 2% 0;
+    background: white;
+    width: 50%;
+    padding: 1%;
+    position: relative;
+    left: 25%;
+    box-shadow: -15px 15px 10px 2px rgb(179, 179, 179);
+}
+
+.carousel {
+    background: rgb(244, 236, 230);
 }
 
 #projects .column {
@@ -186,4 +200,30 @@ footer {
     width: 100%;
     padding: 1%;
     text-align: center;
+    clear: both;
+}
+
+/* BLOG */
+
+.blog {
+    margin: 0;
+    padding: 0;
+}
+
+.column {
+    float: left;
+}
+
+.column::after {
+    clear: both;
+}
+
+.blog .left {
+    background: rgb(230, 218, 206);
+    width: 30%;
+}
+
+.blog .right {
+    background: white;
+    width: 70%;
 }
