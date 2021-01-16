@@ -227,3 +227,8 @@ footer {
     background: white;
     width: 70%;
 }
+
+.nav-item {
+    position: relative;
+    left: 5%;
+}
